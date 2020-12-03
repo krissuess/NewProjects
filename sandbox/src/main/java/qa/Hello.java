@@ -3,12 +3,9 @@ package qa;
 public class Hello {
     public static void main(String[] args) {
 
-        Point p1 = new Point();
-        Point p2 = new Point();
-        p1.x=12;
-        p1.y=23;
-        p2.x=11;
-        p2.y=56;
+        Point p1 = new Point(12.0, 23.0);
+        Point p2 = new Point(11.0, 56.0);
+
         double d=Hello.distance(p1,p2);
         System.out.println(d);
 
